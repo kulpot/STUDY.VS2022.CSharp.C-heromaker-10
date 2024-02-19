@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C__heromaker_10;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,6 +77,11 @@ namespace HeroMaker
 
         private void btn_create_Click(object sender, EventArgs e)
         {
+            //-----START------- C# heromaker 10 hero object ---------------------------------------------------------
+            string heroName = txt_name.Text;
+            //-----END------- C# heromaker 10 hero object ---------------------------------------------------------
+
+
             bool[] abilities = {false, false, false, false, false, false, false, false };
 
             abilities[0] = chk_fly.Checked;
@@ -211,6 +217,16 @@ namespace HeroMaker
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             MessageBox.Show(status_message);
             //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+
+            //-----START------- C# heromaker 10 hero object ---------------------------------------------------------
+            Hero hero = new Hero(heroName, abilities, cities, 
+                preferred_transport, speed, stamina, strength, 
+                birthday, superPowerDiscovery, fatefulDay, years_experience, 
+                pic_cape_color.BackColor.ToString(),
+                dark_side, 
+                picture_of_hero);
+            //-----END------- C# heromaker 10 hero object ---------------------------------------------------------
+
         }
 
         //--------START------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------

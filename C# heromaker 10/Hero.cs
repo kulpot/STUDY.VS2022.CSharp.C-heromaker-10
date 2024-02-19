@@ -8,7 +8,7 @@ namespace C__heromaker_10
 {
     public class Hero   
     {
-        //HeroConstructorMethod //Create->Highlight all Hero Properties->CTRL+. ->Select Create Constructor Method
+        // HeroConstructorMethod //Create->Highlight all Hero Properties->CTRL+. ->Select Create Constructor Method
         public Hero(string name, 
             bool[] specialAbilities, 
             List<string> officeLocations, 
@@ -17,7 +17,7 @@ namespace C__heromaker_10
             DateTime birthday, 
             DateTime superPowerDiscoveryDate, 
             DateTime fatefulDay, 
-            int yearsExperience, 
+            decimal yearsExperience, 
             string capeColor, 
             int darkSidePropensity, 
             string portraitPhoto)
@@ -52,12 +52,14 @@ namespace C__heromaker_10
         public DateTime SuperPowerDiscoveryDate { get; set; }
         public DateTime FatefulDay { get; set; }
 
-        public int YearsExperience { get; set; }
+        public decimal YearsExperience { get; set; }
 
         public String CapeColor { get; set; }
+        //public string CapeColor { get; set; }
 
         public int DarkSidePropensity { get; set; }
 
         public String PortraitPhoto { get; set; }
+        //public string PortraitPhoto { get; set; }
     }
 }
