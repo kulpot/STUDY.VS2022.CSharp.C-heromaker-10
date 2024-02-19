@@ -53,6 +53,11 @@ using System.Windows.Forms;
 
 // groupBox(portrait), pictureBox(sizeMode:Zoom), 
 
+//-------------- C# heromaker 10 hero object ---------------------------------------------------------
+//ref link:https://www.youtube.com/watch?v=8zXxow4OZiY&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=6
+
+// created Hero.cs(HeroProperties/HeroConstructorMethod), 
+
 namespace HeroMaker
 {
     public partial class Form1 : Form
